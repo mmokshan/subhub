@@ -1,0 +1,28 @@
+:root {
+  --navbar-height: 64px;
+}
+/* --------------------Subtitle Download Page--------------------------- */
+.season-all {
+  position: relative;
+  top: 64px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+.sub-all {
+  width: calc(100vw - 440px);
+  min-width: 190px;
+}
+@media (max-width: 600px) {
+  .sub-all {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .season-all {
+    justify-content: center;
+  }
+}

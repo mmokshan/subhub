@@ -1,0 +1,102 @@
+.season-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px ;
+  }
+  .seson-no{
+      color: black;
+      background-color: rgb(116, 116, 116);
+      margin-bottom: 10px;
+      color: aliceblue;
+      padding: 2px;
+      
+  } 
+  .seson-no h3{
+      margin-left: 10px;
+      font-weight: bold;
+  }
+  .episode-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      
+  }
+  .episode-card {
+     
+      flex-basis: 33.3333%;
+    flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: azure;
+      border-radius: 5px;
+      padding: 10px;
+      transition: background-color 0.3s; 
+  }
+  
+  .episode-card:hover {
+      background-color: rgb(101, 105, 105); 
+  }
+  
+   .epi-des{
+      
+   flex-basis: 65%;
+   min-width: 140px;
+   margin-right: 10px;
+  }
+  .epi-no{
+      color: aliceblue;
+      
+  }
+  .epi-name{
+      font-size: 12px;
+      width: 100%;
+      color: aliceblue;
+      font-style: italic;
+   }
+   .download-btn{
+      
+      display: flex;
+      flex-direction:row;    
+      flex-basis: 30%;
+      min-width:fit-content;
+      color: aliceblue;
+      height: fit-content;
+      
+  
+  
+   }
+   .dwn-button{
+     
+      background-color: transparent;
+      color: #fff;
+      padding: 2px 4px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+     
+   }
+  .dwn-button:hover{
+      background-color: rgb(196, 114, 228);
+      border: 1px solid #ffffff; 
+
+  } 
+@media (max-width: 950px) {
+        .episode-card {
+            flex-basis: 50%;
+       
+        } 
+       
+} 
+@media (max-width: 760px) {
+    .episode-card {
+        flex-basis: 100%;
+   
+    }   
+} 

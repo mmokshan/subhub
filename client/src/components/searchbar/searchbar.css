@@ -1,0 +1,157 @@
+
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  left: 34%;
+  top: 20%;
+}
+
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 40px;
+  color: #fff;
+}
+
+.input-search::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-cancel {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+  display: none;
+}
+
+.search-box.expanded .btn-search {
+  display: none;
+}
+
+.search-box.expanded .btn-cancel {
+  display: block;
+}
+
+.btn-search:focus ~ .input-search,
+.btn-cancel:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search.expanded {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.guess {
+  width: 320px;
+  max-height: 300px; /* Set a maximum height */
+  margin-top: 15px;
+  opacity: 0.9; /* Add opacity for a semi-transparent effect */
+  transition: opacity 0.3s ease;
+  overflow-y: auto; 
+  scrollbar-width: none; /* Hide the scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
+  border: 1px solid #ccc; /* Add a border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background-color: rgba(255, 255, 255, 0); /* Set a background color */
+  padding: 10px; /* Add some padding for spacing */
+  border-radius: 5px; /* Add rounded corners */
+}
+.guess::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar for webkit-based browsers (Chrome, Safari) */
+}
+
+.guess.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card {
+  width: 300px;
+  min-height: 75px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+}
+
+.card .image {
+  background-color: chartreuse;
+  width: 40px;
+  height: 55px;
+}
+
+.card .details {
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.details .title {
+  background-color: burlywood;
+  width: 200px;
+  height: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.details .imdb {
+  background-color: blueviolet;
+  font-style: italic;
+}

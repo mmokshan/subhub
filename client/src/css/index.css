@@ -1,0 +1,15 @@
+:root {
+  --navbar-height: 64px;
+}
+
+.app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(to right, rgb(25, 25, 25), rgb(61, 61, 61)); */
+  overflow: hidden;
+  overflow-y: auto;
+  color: rgb(71, 63, 63);
+}
